@@ -1,11 +1,19 @@
-# NCKU IIM Study
+---
+description: Simple start with gurobi
+---
 
-Getting Super Powers
+# Python+Gurobi
 
-Becoming a super hero is a fairly straight forward process:
+## Linear Optimization
 
-```
-$ give me super-powers
+Objective Function:
+
+$$
+min Z=3x+4y
+$$
+
+```text
+model.setObjective(3*x+4*y,GRB.MINIMIZE)
 ```
 
 {% hint style="info" %}
