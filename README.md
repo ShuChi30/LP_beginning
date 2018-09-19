@@ -1,23 +1,24 @@
 # NCKU IIM Study
 
-Getting Super Powers
-
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% hint style="danger" %}
+Let nothing distract you from your goal.
 {% endhint %}
 
-Once you're strong enough, save the world:
+## 2018 Fall 
 
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
+### Courses
+
+* Optimization Model and Application
+* E-Manufacturing
+* Reliability Management
+* Project Management
+
+### Self Learning
+
+* Operation Research
+* Machine Learning Foundation
+* Meta-heuristic Algorithm
+* Data Mining 
 
 
 
