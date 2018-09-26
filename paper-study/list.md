@@ -59,19 +59,21 @@ Semiconductor PM scheduling challenge:
 
 ### Consideration:
 
-Uncertainty of WIP and tool failures
+**Interdependence of PM tasks** : The entire tool's availability is dependent on each chamber.
 
-interdependence of PM tasks
+**Uncertainty of WIP**  : PM tasks should be avoided when a large amount of work is expected to arrive soon.
 
-Consolidate PM tasks
+time window policy --&gt; “pull” or “push” a planned PM task beyond a certain period 
 
-Technician Availability Constraints
+Besides...
+
+better to **Consolidate** PM tasks
+
+**Tool failures, costs for supplies, lost production, technician availability constraints**, should also be accounted for
 
 ### Hierarchical PM Planning and Scheduling
 
-#### 1.PM planning model
-
-**Optimize time window policy**
+#### 1. Long-term horizon: PM planning model
 
 Considering **technical state** \(conventional\) information  ,e.g.age of machines
 
@@ -79,18 +81,32 @@ and **operating state** information , e.g.demand pattern
 
 formulated as MDP \(**Markov Decision Process**\) due to feature of underlying stochastic processes and sequential decision epoches.
 
-#### 2.PM scheduling model
+--&gt; Output : **Optimized time window policy**
+
+#### 2. Short-term horizon: PM scheduling model
 
 1. Interdependence of different PM tasks in terms of their joint impact on the entire tool’s throughput.
-2. Match up between the tool’s availability and projected incoming WIP.
+2. **Match up** between the tool’s availability and projected incoming WIP.
 
 ![ Two-level hierarchical modeling framework](../.gitbook/assets/ying-mu-kuai-zhao-20180926-xia-wu-1.17.19.png)
 
-### Solutions
+### Background
+
+two types of PM : Calendar-based, Operation-based
+
+Even if a PM window is operation-based, e.g., “2000 wafers 10%” since last PM, it will be converted to a calendar basis. If an optimization model were to track wafer count, this would lead to a very high level of computational complexity. _\[HOW TO convert, see reference 15\]_
+
+### MIP of PM scheduling
 
 MIP\(Mixed Integer Programming\) model
 
-configuration matrix
+Target : To determine the best time for doing each PM
+
+Input : configuration matrix for a cluster tool
+
+A set of PM tasks need to be placed within the time window.
+
+Objective : Max overall tool availability, Min WIP
 
 ...
 
