@@ -1,4 +1,4 @@
-# List
+# paper study
 
 ## About Maintenance & Scheduling
 
@@ -44,11 +44,61 @@ Multi-objective: 1.Production Volume Rate 2.Utilization --&gt; Weighted
 
 LP-based heuristic has the best performance. 
 
+## Optimal Preventive Maintenance Scheduling in Semiconductor Manufacturing
+
+ Xiaodong Yao, Member, IEEE, Emmanuel Fernández-Gaucherand, Senior Member, IEEE, Michael C. Fu, and Steven I. Marcus, Fellow, IEEE
+
 {% embed data="{\"url\":\"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1321132\",\"type\":\"link\",\"title\":\"Optimal preventive maintenance scheduling in semiconductor manufacturing - IEEE Journals & Magazine\",\"description\":\"Preventive maintenance \(PM\) scheduling is a very challenging task in semiconductor manufacturing due to the complexity of highly integrated fab tools and s\",\"icon\":{\"type\":\"icon\",\"url\":\"https://ieeexplore.ieee.org/favicon.ico\",\"aspectRatio\":0}}" %}
 
-{% embed data="{\"url\":\"https://onlinelibrary.wiley.com/doi/full/10.1111/j.1937-5956.2000.tb00465.x\",\"type\":\"link\",\"title\":\"COMBINED PRODUCTION AND MAINTENANCE SCHEDULING FOR A MULTIPLE‐PRODUCT, SINGLE‐ MACHINE PRODUCTION SYSTEM - SLOAN - 2000 - Production and Operations Management - Wiley Online Library\",\"icon\":{\"type\":\"icon\",\"url\":\"https://onlinelibrary.wiley.com/favicon.ico\",\"aspectRatio\":0}}" %}
+Semiconductor PM scheduling challenge:
 
+1. **Highly integrated system**: A PM schedule on one tool can have significant impact on upstream or downstream tools.
+2. **Cluster Tools**: A cluster tool is a highly integrated machine that is composed of several chambers and robots, where different PM tasks on different chambers have to be coordinated carefully in order to maximize the availability \(therefore, throughput\) of the entire tool.
 
+![Cluster Tool](../.gitbook/assets/image.png)
+
+### Consideration:
+
+Uncertainty of WIP and tool failures
+
+interdependence of PM tasks
+
+Consolidate PM tasks
+
+Technician Availability Constraints
+
+### Hierarchical PM Planning and Scheduling
+
+#### 1.PM planning model
+
+**Optimize time window policy**
+
+Considering **technical state** \(conventional\) information  ,e.g.age of machines
+
+and **operating state** information , e.g.demand pattern
+
+formulated as MDP \(**Markov Decision Process**\) due to feature of underlying stochastic processes and sequential decision epoches.
+
+#### 2.PM scheduling model
+
+1. Interdependence of different PM tasks in terms of their joint impact on the entire tool’s throughput.
+2. Match up between the tool’s availability and projected incoming WIP.
+
+![ Two-level hierarchical modeling framework](../.gitbook/assets/ying-mu-kuai-zhao-20180926-xia-wu-1.17.19.png)
+
+### Solutions
+
+MIP\(Mixed Integer Programming\) model
+
+configuration matrix
+
+...
+
+## 
 
 {% embed data="{\"url\":\"https://www.hindawi.com/journals/mpe/2012/875641/\",\"type\":\"link\",\"title\":\"Genetic Algorithm for Job Scheduling with Maintenance Consideration in Semiconductor Manufacturing Process\",\"description\":\"This paper presents wafer sequencing problems considering perceived chamber conditions and maintenance activities in a single cluster tool through the simulation-based optimization method. We develop optimization methods which would lead to the best wafer release policy in the chamber tool to maximize the overall yield of the wafers in semiconductor manufacturing system. Since chamber degradation will jeopardize wafer yields, chamber maintenance is taken into account for the wafer sequence decision-making process. Furthermore, genetic algorithm is modified for solving the scheduling problems in this paper. As results, it has been shown that job scheduling has to be managed based on the chamber degradation condition and maintenance activities to maximize overall wafer yield.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.hindawi.com/images/apple-touch-icon-144x144.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://images.hindawi.com/images/social/MPE.jpg\",\"width\":1200,\"height\":630,\"aspectRatio\":0.525}}" %}
+
+
+
+{% embed data="{\"url\":\"https://onlinelibrary.wiley.com/doi/full/10.1111/j.1937-5956.2000.tb00465.x\",\"type\":\"link\",\"title\":\"COMBINED PRODUCTION AND MAINTENANCE SCHEDULING FOR A MULTIPLE‐PRODUCT, SINGLE‐ MACHINE PRODUCTION SYSTEM - SLOAN - 2000 - Production and Operations Management - Wiley Online Library\",\"icon\":{\"type\":\"icon\",\"url\":\"https://onlinelibrary.wiley.com/favicon.ico\",\"aspectRatio\":0}}" %}
 

@@ -8,7 +8,7 @@
 
 ## Paper Study
 
-* [List](paper-study/list.md)
+* [paper study](paper-study/list.md)
 * [INFORMS](https://www.informs.org/Publications/INFORMS-Journals)
 * [note](paper-study/untitled.md)
 
