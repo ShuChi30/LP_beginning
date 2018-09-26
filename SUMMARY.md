@@ -10,7 +10,7 @@
 
 * [List](paper-study/list.md)
 * [INFORMS](https://www.informs.org/Publications/INFORMS-Journals)
-* [Untitled](paper-study/untitled.md)
+* [note](paper-study/untitled.md)
 
 ## Techniques
 
