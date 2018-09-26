@@ -1,9 +1,5 @@
 # NCKU IIM Study
 
-{% hint style="danger" %}
-Let nothing distract you from your goal.
-{% endhint %}
-
 ## 2018 Fall 
 
 ### Courses
@@ -19,6 +15,10 @@ Let nothing distract you from your goal.
 * Machine Learning Foundation
 * Meta-heuristic Algorithm
 * Data Mining 
+
+{% hint style="danger" %}
+Let nothing distract you from your goal.
+{% endhint %}
 
 
 
