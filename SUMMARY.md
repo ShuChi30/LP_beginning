@@ -11,6 +11,7 @@
 * [paper study](paper-study/list.md)
 * [INFORMS](https://www.informs.org/Publications/INFORMS-Journals)
 * [note](paper-study/untitled.md)
+* [Scheduling](paper-study/scheduling.md)
 
 ## Techniques
 
